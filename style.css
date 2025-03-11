@@ -1,0 +1,75 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Dark Mode Theme */
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #1e1e1e;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  color: #bb86fc;
+}
+
+textarea, input {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #2c2c2c;
+  color: #e0e0e0;
+  font-size: 1rem;
+  resize: none;
+}
+
+textarea::placeholder, input::placeholder {
+  color: #888;
+}
+
+.mode-toggle {
+  display: flex;
+  justify-content: center; /* Center the radio buttons and labels */
+  gap: 1rem; /* Space between radio buttons */
+  margin-bottom: 1rem;
+}
+
+.mode-toggle label {
+  display: flex;
+  flex-direction: column; /* Stack checkbox and label vertically */
+  align-items: center; /* Center items horizontally */
+  gap: 0.25rem; /* Space between checkbox and label */
+  font-size: 1rem;
+  color: #e0e0e0;
+}
+
+.mode-toggle input {
+  accent-color: #bb86fc;
+}
+
+#outputText {
+  background-color: #2c2c2c;
+  color: #e0e0e0;
+}

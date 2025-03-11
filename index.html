@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EnDecrypt App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>EnDecrypt</h1>
+    <textarea id="inputText" placeholder="Enter text to encrypt or decrypt..."></textarea>
+    <input type="text" id="keyInput" placeholder="Enter your unique key...">
+    <div class="mode-toggle">
+      <label>
+        <input type="radio" name="mode" value="encrypt" checked>
+        <span>Encrypt</span>
+      </label>
+      <label>
+        <input type="radio" name="mode" value="decrypt">
+        <span>Decrypt</span>
+      </label>
+    </div>
+    <textarea id="outputText" placeholder="Result will appear here..." readonly></textarea>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
